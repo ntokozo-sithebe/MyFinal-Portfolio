@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Madimi+One&family=Passero+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*,
+*, ::before
+*, ::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ 
+/* from app.vue */
+#app {
+    font-family: "Madimi One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: white;
+	
+  }
+  
+  nav {
+    background-color:lightblue;
+    color: white;
+    /* margin-bottom: 50px;
+    padding: 0px; */
+  }
+/* .navbar-nav{
+  padding: 10px;
+
+} */
+/* .nav-item{
+margin-bottom: 0px;
+padding: 10px;
+color: white;
+} */
+
+  .navbar-nav :hover{
+    background-color:white;
+    border-radius: 10%;
+    padding: 4px;
+    color: white;
+  }
+  
+  nav a {
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* nav a.router-link-exact-active {
+    color: #42b983;
+  } */
+
+  /* img[alt='logo']{
+    width: 3rem;
+    aspect-ratio: 1/1;
+  } */
+/* from home */
+  /* .Homeimg{
+    width: 15rem;
+    margin: 10px pink;
+    padding: 10px lightblue;
+  }
+
+  .container-fluid{
+	height: 290px;
+  }
+   */
