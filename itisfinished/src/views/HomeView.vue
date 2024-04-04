@@ -1,26 +1,42 @@
 <template>
   <div class="container">
 	<div class="row">
-		<div class="col"> 
-      <img class="img-fluid w-50" src="https://i.postimg.cc/8zhrFqSb/Screenshot-2023-10-29-162640.png" alt="ntokozo">
-			<p>
-        Ntokozo Sithebe  
-      </p>
+		<div class="col justify-content-center"> 
+      <img class="img-fluid w-75 m-5" src="https://i.postimg.cc/8zhrFqSb/Screenshot-2023-10-29-162640.png" alt="ntokozo" loading="lazy">
 		</div>
-		<div class="col">
-	
-		</div>
+    <div class="col">
+      <div class="row justify-content-center m-3 mb-2" id="HomeText">
+            <p class="homeText text-dark text-sm-center"></p>
+          </div>
+    </div>
+		
 		
 	</div>
-    
-  
-
   </div>
 </template>
 
 <script>
 
-export default {}
+export default {
+methods:{
+    typeWriter(targetId, text, speed = 100){
+      const typer = document.getElementById('HomeText');
+  if (typer) {
+    let i = 0;
+    const typeWriterInterval = setInterval(() => {
+      if (i < text.length) {
+        typer.innerHTML += text.charAt(i);
+        i++;
+      } else {
+        clearInterval(typeWriterInterval);
+      }
+    }, speed);
+  }
+},
+},
+}
+
+
 </script>
 <style scoped>
 /* .overlay_image{
@@ -49,24 +65,14 @@ https://i.ibb.co/gjmw9P8/white-noise.jpg */
 } */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .container{
+ .container{
 	overflow: hidden;
   scroll-behavior: none;
+  align-items: center;
+  text-align: center;
 }
 
+/*
 @keyframes slide{
   from{
     transform: translateX(-300px);
