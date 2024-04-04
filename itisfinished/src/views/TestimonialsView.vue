@@ -5,7 +5,7 @@
         </div>
 		<div class="Card">
                 <div class="row justify-content-center" id="front">
-            <div class="col-md-6 m-3 p-3 rounded-6 " v-for="reviews in testimonials" :key="reviews">
+            <div class="col-md-3 m-3 p-3 rounded-6 " v-for="reviews in testimonials" :key="reviews">
                 <div class="card m-3">
               <div class="card-body justify-content-center">
 				<h5 class="card-title m-5">{{ reviews.name }} {{ reviews.surname }}</h5>
@@ -15,7 +15,7 @@
               </div> 
 			<div class="back">
 				<div class="card-body justify-content-center m-5">
-				<p class="card-text">{{ reviews.quotes }}</p>
+				<p class="card-text text-align-center mt-3">{{ reviews.quotes }}</p>
 				</div>
 			</div>
 			</div>
@@ -57,6 +57,9 @@
     scroll-behavior: none;
     margin: 0px;
     padding: 0px;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
     /* animation: bounce 0.9s ; */
 }
 
@@ -74,17 +77,17 @@
 }
 
 .card{
-  width: 30rem;
-  height: 42rem;
+  width: 20rem;
+  height: 30rem;
   position: relative;
   transition: transform 150ms;
   transform-style: preserve-3d;
   perspective: 450px;
-  margin: 2rem;
-  animation: bounce 0.5s  ;
+  margin: 4rem;
+  /* animation: bounce 0.5s  ; */
 
 }
-@keyframes bounce{
+/* @keyframes bounce{
     10%{
         height: 50px;
         width: 50px
@@ -108,12 +111,13 @@
       
         transform: translateY(0px);
     }
-}
+} */
 
 
 .card img[alt="theProfiles"]{
   width: 70%;
   height: 50%;
+  margin-bottom: 1rem;
 }
 
 

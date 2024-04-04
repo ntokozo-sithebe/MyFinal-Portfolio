@@ -1,12 +1,13 @@
 <template>
   <div class="container">
 	<div class="row">
-		<div class="col">
+		<div class="col"> 
+      <img class="img-fluid w-50" src="https://i.postimg.cc/8zhrFqSb/Screenshot-2023-10-29-162640.png" alt="ntokozo">
 			<p>
-        Ntokozo <br> <span> Sithebe </span> 
+        Ntokozo Sithebe  
       </p>
 		</div>
-		<div class="col" id="image">
+		<div class="col">
 	
 		</div>
 		
@@ -36,25 +37,6 @@ export default {}
   cursor: pointer;
 
 } */
-
-#image{
-  background-image: url(https://i.ibb.co/WsQ54g2/LC2.jpg);
-  background-repeat: no-repeat;
-  background-position: 70% 10%; 
-	height: 50vh;
-  width: 50vw;
-  background-size: auto;
-	/* background-position: left top;
-  background-position-x: left; */
-	margin: 5rem;
-  /* padding: 5rem; */
-  border: 0.5rem solid black;
-  border-radius: 20%;
-  
-
-}
-
-
 
 
 /* white noise 
