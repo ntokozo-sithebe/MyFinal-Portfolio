@@ -1,12 +1,12 @@
 <template>
-    <div class="container g-0">
+    <div class="container">
         <div class="row">
             <h2 class="display-4">Testimonials</h2>
         </div>
-		<div class="Card">
-                <div class="row justify-content-center" id="front">
-            <div class="col-md-3 m-3 p-3 rounded-6 " v-for="reviews in testimonials" :key="reviews">
-                <div class="card m-3">
+		<div class="Card justify-content-center m-3">
+                <div class="row d-block d-flex m-3" id="front">
+            <div class="col-md-3 m-3 p-2" v-for="reviews in testimonials" :key="reviews">
+                <div class="card">
               <div class="card-body justify-content-center">
 				<h5 class="card-title m-5">{{ reviews.name }} {{ reviews.surname }}</h5>
                 <p class="card-title m-5"> {{ reviews.title }}</p>
@@ -58,8 +58,9 @@
     margin: 0px;
     padding: 0px;
     justify-content: center;
-    margin: 0px;
-    padding: 0px;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
     /* animation: bounce 0.9s ; */
 }
 
@@ -70,6 +71,12 @@
     height: 50%;
     padding: 2rem;
 }
+
+/* .term1{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    align-items: center;
+} */
 
 
 .testimonials{
@@ -83,67 +90,29 @@
   transition: transform 150ms;
   transform-style: preserve-3d;
   perspective: 450px;
-  margin: 4rem;
-  /* animation: bounce 0.5s  ; */
-
+  /* margin: 1rem; */
+  border-radius: 2px solid;
+  box-shadow: 2px 5px 2px;
+  margin-right: 3rem;
 }
-/* @keyframes bounce{
-    10%{
-        height: 50px;
-        width: 50px
-    }
-
-    30%{
-        height: 50px;
-        width: 40px;
-    }
-
-    50%{
-        height: 30px;
-        width: 57px;
-        transform: translateY(250px);
-    }
-    75%{
-        height: 50px;
-        width: 57px;
-    }
-    100%{
-      
-        transform: translateY(0px);
-    }
-} */
-
-
 .card img[alt="theProfiles"]{
   width: 70%;
   height: 50%;
   margin-bottom: 1rem;
 }
 
-
-/* .card :nth-child(even){
-  background-color: peachpuff;
-}  */
-
-
-body{
-    /* height: 100vh; */
+/* body{ */
+    /* height: 100vh; 
     overflow: hidden;
-    /* background: linear-gradient(rgb(68, 68, 176), rgb(98, 98, 205), rgb(52, 125, 150)); */
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* background: linear-gradient(rgb(68, 68, 176), rgb(98, 98, 205), rgb(52, 125, 150)); 
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     color: white;
     display: flex ;
     justify-content: center;
     align-items: center;
+    margin:0px;
 
 }
-
-/* .container{
-    /* width: 350px ;
-    height: 500px ; 
-    perspective: 450px;
-
-} */
 
 /* .card{
      height: 100%;
@@ -156,25 +125,25 @@ body{
 .card:hover{
     cursor: pointer;
     transform: rotateY(180deg);
-
-
 }
 
-#front, .back{
+ .back{
     height: 100%;
     width: 100%;
     border-radius: 5px;
     position: absolute;
     backface-visibility: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem
 
 }
 
 #front{
-    height: 100%;
-    width: 100%;
+    /* height: 100%; */
+    /* width: 100%; */
     /* background-image:url(https://i.postimg.cc/3NbX9pCC/vitamin-c-serum-stylized-2-opt-900x.webp/350x500) ; */
-    position: absolute;
-    backface-visibility: hidden;
+    /* position: absolute; */
+    /* backface-visibility: hidden; */
 	
 }
 
@@ -189,6 +158,35 @@ body{
     
 }
 
+/* .container{
+    max-width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+
+} */
+.Card{
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 100%; */
+}
+
+@media (min-width: 320px){
+    .container{
+        min-width: 320px;
+        justify-content: center;
+        
+    }
+    
+}
+@media (min-width: 647px){
+    .container{
+        min-width: 647px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    
+}
 
 
 </style>

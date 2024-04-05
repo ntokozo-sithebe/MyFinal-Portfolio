@@ -20,8 +20,8 @@
         <!-- <div class="row">
             <h2 class="display-4 text-black">My Projects</h2>
         </div> -->
-        <div class="row">
-            <div class="col-md-4 justify-content-center" v-for="item in projects" :class="item.name" :key="item">
+        <div class="row ">
+            <div class="Card col-md-4 justify-content-center" v-for="item in projects" :class="item.name" :key="item">
                 <div class="card d-flex d-md-flex justify-content-center gap-lg-5 row-gap-md-5" >
               <div class="card-body text-center">
                 <h5 class="card-title">{{ item.name }}</h5>
@@ -63,7 +63,26 @@
     width: 15rem;
     height: 15rem;
     margin: 2rem;
+    box-shadow: 5px 5px grey;
   }
+
+  .card :hover{
+    cursor: pointer;
+  }
+
+/* .Card{
+    padding:50px ;
+    background-color:lightblue ;
+    transition: transform .2s;
+    width: 200px;
+    height:200px ;
+    margin: 0 auto;
+}
+.Card :hover{
+    transform: scale(1.5);
+} */
+
+
   /* .myProject{
     position: absolute;
     top: 50%;
@@ -83,7 +102,7 @@
     height: 100vh;
     overflow: hidden;
     background: linear-gradient(90deg, rgb(79, 147, 236) 0%, rgb(151, 199, 238)  35%, rgb(182, 216, 240) 100% );
-    height: 120rem;
+    min-height: 120rem;
 }
 .box div{
     position: relative;

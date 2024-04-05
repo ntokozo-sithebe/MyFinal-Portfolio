@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Madimi+One&family=Passero+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 *,
 *, ::before
@@ -11,13 +12,17 @@
  
 /* from app.vue */
 #app {
-    font-family: "Madimi One", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: white;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: black;
+  scroll-behavior: none;
+  overflow: hidden;
+  min-height: 120rem;
 	
   }
   
@@ -39,8 +44,7 @@ color: white;
 
   .navbar-nav :hover{
     background-color:white;
-    border-radius: 10%;
-    padding: 4px;
+    border-radius: 5rem;
     color: white;
   }
   

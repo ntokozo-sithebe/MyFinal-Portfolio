@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
+  <div class="container">
     <!-- <router-link to="/"> -->
 		<!-- <h2 class="favicon "> Ntokozo Sithebe </h2> -->
     <!-- <img class="img-fluid w-25 m-auto" src="https://i.ibb.co/tZTkLHF/s.png" alt="logo" loading="lazy"> -->
@@ -9,7 +9,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-lg-0 me-0 mx-0">
+      <ul class="navbar-nav ms-auto mb-lg-2 ms-3 mx-auto">
         <li class="nav-item text-white">
           <router-link to="/" class="nav-link active">
             Home
@@ -22,7 +22,7 @@
         </li>
         <li>
           <router-link to="/resume" class="nav-link active">
-            Resume
+            Education & Experience
           </router-link>
         </li>
         <li>
@@ -32,7 +32,7 @@
         </li>
         <li>
           <router-link to="/Testimonials" class="nav-link active">
-            Testimonials
+            Reviews
           </router-link>
         </li>
         <li>

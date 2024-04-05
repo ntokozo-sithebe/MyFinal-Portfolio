@@ -1,9 +1,10 @@
 <template>
   <NavBar/>
-  <main class="container-fluid">
+  <main class="container">
     <router-view/>
   <Spinner/>
   </main>
+  
   <Footer/>
   
 </template>
